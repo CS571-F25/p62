@@ -1,4 +1,3 @@
-import React from 'react';
 import LeaderCard from '../components/LeaderCard';
 
 const Leaders = () => {

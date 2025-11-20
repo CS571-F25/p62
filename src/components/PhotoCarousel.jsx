@@ -1,5 +1,6 @@
-import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+
+// 2025 Senior Banquet Google Photos: https://photos.google.com/share/AF1QipN4b_rvldO8PYqLiM3G2TZPi2Yst7O9CcStHnLX2CQfablAn4FFp5p38jZGD4megw?key=ZDVUMUdMT0lrQWY3b0lFTzEtYzBCSjFSMDNHRmR3
 
 const PhotoCarousel = () => {
   return (

@@ -1,5 +1,7 @@
 import React from 'react';
 
+// Can use this API for daily Bible verse: https://docs.api.bible/tutorials/verse-of-the-day/
+
 const DailyVerse = () => {
   return (
     <div style={{ textAlign: 'center', margin: '2rem 0' }}>
