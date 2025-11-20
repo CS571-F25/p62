@@ -5,7 +5,7 @@ const NavigationBar = () => {
   return (
     <Navbar bg="dark" variant="dark" expand="lg">
       <Navbar.Brand as={Link} to="/" className="ms-3">
-        <img src="/assets/logo.png" width="30" height="30" alt="AAIV logo" />
+        <img src="/p62/assets/logo.png" width="30" height="30" alt="AAIV logo" />
       </Navbar.Brand>
       <Navbar.Brand as={Link} to="/">AAIV</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
