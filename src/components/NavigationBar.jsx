@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 const NavigationBar = () => {
   return (
     <Navbar bg="dark" variant="dark" expand="lg">
-      <Navbar.Brand href="/" className="ms-3">
-        <img src="src\assets\logo.png" width="30" height="30" alt="AAIV logo"/>
+      <Navbar.Brand as={Link} to="/" className="ms-3">
+        <img src="/assets/logo.png" width="30" height="30" alt="AAIV logo" />
       </Navbar.Brand>
       <Navbar.Brand as={Link} to="/">AAIV</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
