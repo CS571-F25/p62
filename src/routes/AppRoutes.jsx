@@ -8,7 +8,7 @@ import Leaders from '../pages/Leaders';
 
 const AppRoutes = () => {
   return (
-    <Router basename="/p62">
+    <Router basename="/p62/">
       <NavigationBar />
       <div style={{ padding: '1rem' }}>
         <Routes>
