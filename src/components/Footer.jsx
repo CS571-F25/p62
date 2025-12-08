@@ -94,7 +94,7 @@ const Footer = () => {
             aria-label="Linktree"
             title="Linktree"
           >
-            <img src="/p62/docs/assets/linktreeicon.webp" alt="Linktree" width="24" height="24" style={{ objectFit: 'contain' }} />
+            <img src="/p62/assets/linktreeicon.webp" alt="Linktree" width="24" height="24" style={{ objectFit: 'contain' }} />
           </a>
 
           <a
@@ -106,7 +106,7 @@ const Footer = () => {
             aria-label="Wisconsin Involvement Network"
             title="WIN"
           >
-            <img src="/p62/docs/assets/winicon.png" alt="WIN" width="24" height="24" style={{ objectFit: 'contain' }} />
+            <img src="/p62/assets/winicon.png" alt="WIN" width="24" height="24" style={{ objectFit: 'contain' }} />
           </a>
         </div>
 
