@@ -53,7 +53,7 @@ const Events = () => {
           <Col xs={12} md={6} lg={6} xl={6}>
             <Card>
               <Card.Title>Daily Prayer Meetings</Card.Title>
-              <Card.Img src={"src/assets/daily_prayer.jpg"} alt="Daily Prayer Schedule"/>
+              <Card.Img src={"/p62/assets/daily_prayer.jpg"} alt="Daily Prayer Schedule"/>
               <Card.Body>
                 <Card.Text>Are you feeling the stress of the semester and need some rest? Come get prayer and find rest at one of our weekly prayer meetings</Card.Text>
               </Card.Body>
