@@ -5,16 +5,19 @@ import Footer from '../components/Footer';
 import Home from '../pages/Home';
 import About from '../pages/About';
 import Leaders from '../pages/Leaders';
+import Events from '../pages/Events';
 
 const AppRoutes = () => {
   return (
     <Router basename="/p62/">
       <NavigationBar />
-      <div style={{ padding: '1rem' }}>
+      {/* Add top padding so content starts below the fixed navbar */}
+      <div style={{ paddingTop: '62px' }}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/about/leaders" element={<Leaders />} />
+          <Route path="/leaders" element={<Leaders />} />
+          <Route path="/events" element={<Events />} />
         </Routes>
       </div>
       <Footer />

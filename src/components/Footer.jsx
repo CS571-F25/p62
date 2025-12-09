@@ -43,7 +43,7 @@ const Footer = () => {
       <div style={innerStyle}>
         <div style={{ textAlign: 'center' }}>
           <h4 style={{ margin: 0 }}>AAIV</h4>
-          <p style={{ margin: '0.25rem 0 0.5rem', color: '#555' }}>Follow & connect with us</p>
+          <p style={{ margin: '0.25rem 0 0.5rem', color: '#555' }}>Follow & connect with us!</p>
         </div>
 
         <div style={socialsRow} aria-label="AAIV social links">
