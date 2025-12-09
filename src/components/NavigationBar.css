@@ -1,0 +1,52 @@
+/* Slightly taller, more spacious navbar */
+.aaiv-navbar {
+  padding: 0.75rem 1.25rem;
+  background: #111827 !important; /* Rich dark blue/black */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Logo + text aligned cleanly */
+.aaiv-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.aaiv-logo {
+  filter: brightness(1.15);
+}
+
+.aaiv-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: white;
+}
+
+/* Navigation link styling */
+.aaiv-nav-links .aaiv-link {
+  font-size: 1.05rem;
+  margin-right: 1rem;
+  color: rgba(255, 255, 255, 0.85) !important;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+/* Hover */
+.aaiv-nav-links .aaiv-link:hover {
+  color: #facc15 !important; /* warm AAIV gold accent */
+  transform: translateY(-1px);
+}
+
+/* Active link feel on click */
+.aaiv-nav-links .aaiv-link:active {
+  transform: translateY(1px);
+}
+
+/* Make toggler match theme */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
