@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
 import PhotoCarousel from '../components/PhotoCarousel';
 import DailyVerse from '../components/DailyVerse';
 import './Home.css';
@@ -11,10 +12,12 @@ const Home = () => {
         <PhotoCarousel />
       </div>
 
-      {/* Daily Verse card */}
-      <div className="home-content">
-        <DailyVerse />
-      </div>
+      {/* Daily Verse section in a Bootstrap container */}
+      <Container>
+        <div className="home-content">
+          <DailyVerse />
+        </div>
+      </Container>
     </section>
   );
 };

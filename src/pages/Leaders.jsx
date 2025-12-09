@@ -1,26 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import InstagramEmbed from '../components/InstagramEmbed';
 import './Leaders.css';
 
 const Leaders = () => {
-  // Instagram script loader
-  useEffect(() => {
-    // Look for an existing Instagram embed script by src
-    const existingScript = document.querySelector(
-      "script[src='https://www.instagram.com/embed.js']"
-    );
-
-    if (!existingScript) {
-      const script = document.createElement('script');
-      script.src = 'https://www.instagram.com/embed.js';
-      script.async = true;
-      document.body.appendChild(script);
-    } else if (window.instgrm && window.instgrm.Embeds) {
-      // Re-process embeds if script already loaded
-      window.instgrm.Embeds.process();
-    }
-  }, []);
-
   return (
     <section className="leaders-page">
       <div className="leaders-hero">
@@ -34,25 +17,17 @@ const Leaders = () => {
         <Container>
           <Row className="gy-4">
             <Col md={6} className="leaders-instagram-col">
-              <div className="leaders-embed-wrapper">
-                <blockquote
-                  className="instagram-media"
-                  data-instgrm-captioned
-                  data-instgrm-permalink="https://www.instagram.com/p/DNf7mApNPs_/?utm_source=ig_embed&utm_campaign=loading"
-                  data-instgrm-version="14"
-                ></blockquote>
-              </div>
+              <InstagramEmbed
+                id="DNf7mApNPs_"          // Chapter Shepherd Team post
+                className="leaders-embed-wrapper"
+              />
             </Col>
 
             <Col md={6} className="leaders-instagram-col">
-              <div className="leaders-embed-wrapper">
-                <blockquote
-                  className="instagram-media"
-                  data-instgrm-captioned
-                  data-instgrm-permalink="https://www.instagram.com/p/DOWAXCqDel7/?utm_source=ig_embed&utm_campaign=loading"
-                  data-instgrm-version="14"
-                ></blockquote>
-              </div>
+              <InstagramEmbed
+                id="DOWAXCqDel7"         // Small Group Leaders post
+                className="leaders-embed-wrapper"
+              />
             </Col>
           </Row>
         </Container>

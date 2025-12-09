@@ -1,10 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
-// Fetches a daily Bible verse. Primary source: API.Bible (requires API key).
-// If no key is present or the request fails, falls back to OurManna's free daily verse API.
-// To use API.Bible, add a .env file at the project root with:
-// VITE_BIBLE_API_KEY=your_api_bible_key_here
-// (Vite exposes env vars starting with VITE_ to the client via import.meta.env)
+import { Card, Spinner, Alert } from 'react-bootstrap';
 
 const DailyVerse = () => {
   const [verseText, setVerseText] = useState('');
@@ -19,10 +14,13 @@ const DailyVerse = () => {
       setLoading(true);
       setError(null);
 
-      // Use only OurManna's free daily verse API.
       const options = { method: 'GET', headers: { accept: 'application/json' } };
+
       try {
-        const fbResp = await fetch('https://beta.ourmanna.com/api/v1/get?format=json&order=daily', options);
+        const fbResp = await fetch(
+          'https://beta.ourmanna.com/api/v1/get?format=json&order=daily',
+          options
+        );
         if (fbResp.ok) {
           const fb = await fbResp.json();
           const text = fb?.verse?.details?.text || '';
@@ -41,7 +39,7 @@ const DailyVerse = () => {
       }
 
       if (mounted) {
-        setError('Unable to fetch verse. Please check your network or API key.');
+        setError('Unable to fetch verse. Please check your network or try again later.');
         setLoading(false);
       }
     }
@@ -54,17 +52,30 @@ const DailyVerse = () => {
   }, []);
 
   return (
-    <div style={{ textAlign: 'center', margin: '2rem 0' }}>
-      <h4>Daily Bible Verse</h4>
-      {loading && <p>Loading...</p>}
-      {error && <p style={{ color: 'crimson' }}>{error}</p>}
-      {!loading && !error && (
-        <blockquote style={{ fontStyle: 'italic' }}>
-          <p>{verseText}</p>
-          {reference && <footer>- {reference}</footer>}
-        </blockquote>
-      )}
-    </div>
+    <Card className="daily-verse-card text-center my-4" border="0">
+      <Card.Body>
+        <Card.Title>Daily Bible Verse</Card.Title>
+
+        {loading && (
+          <div className="mt-3">
+            <Spinner animation="border" size="sm" role="status" />
+          </div>
+        )}
+
+        {error && (
+          <Alert variant="danger" className="mt-3 mb-0">
+            {error}
+          </Alert>
+        )}
+
+        {!loading && !error && (
+          <blockquote className="mt-3 mb-0" style={{ fontStyle: 'italic' }}>
+            <p className="mb-2">{verseText}</p>
+            {reference && <footer className="text-muted">— {reference}</footer>}
+          </blockquote>
+        )}
+      </Card.Body>
+    </Card>
   );
 };
 
