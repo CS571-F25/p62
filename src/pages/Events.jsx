@@ -12,38 +12,43 @@ const Events = () => {
         </p>
       </div>
 
-      <div className="events-content">
-        <section className="events-section">
-          <h2 className="events-section-title">Weekly Schedule</h2>
-          <ul className="events-list">
-            <li>
-              <span className="events-day">Mondays 7-7:45pm:</span>
-              <span className="events-text">
-                NINJA (Nighttime Intercession to be Near Jesus Always) Prayer Meetings
-              </span>
-            </li>
-            <li>
-              <span className="events-day">Tuesdays–Thursday:</span>
-              <span className="events-text">
-                Daily Prayer Meetings
-              </span>
-            </li>
-            <li>
-              <span className="events-day">Tuesdays–Thursdays 7-9pm:</span>
-              <span className="events-text">
-                Small Group Bible Studies
-              </span>
-            </li>
-            <li>
-              <span className="events-day">Fridays 7-9pm:</span>
-              <span className="events-text">
-                Large Group
-              </span>
-            </li>
-          </ul>
-        </section>
-      </div>
+      
       <Container>
+        <Row>
+          <Col>
+            <div className="events-content">
+              <section className="events-section">
+                <h2 className="events-section-title">Weekly Schedule</h2>
+                <ul className="events-list">
+                  <li>
+                    <span className="events-day">Mondays 7-7:45pm:</span>
+                    <span className="events-text">
+                      NINJA (Nighttime Intercession to be Near Jesus Always) Prayer Meetings
+                    </span>
+                  </li>
+                  <li>
+                    <span className="events-day">Tuesdays–Thursday:</span>
+                    <span className="events-text">
+                      Daily Prayer Meetings
+                    </span>
+                  </li>
+                  <li>
+                    <span className="events-day">Tuesdays–Thursdays 7-9pm:</span>
+                    <span className="events-text">
+                      Small Group Bible Studies
+                    </span>
+                  </li>
+                  <li>
+                    <span className="events-day">Fridays 7-9pm:</span>
+                    <span className="events-text">
+                      Large Group
+                    </span>
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </Col>
+        </Row>
         <Row>
           <Col xs={12} md={6} lg={6} xl={6}>
             <Card>

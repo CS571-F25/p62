@@ -6,6 +6,7 @@ import Home from '../pages/Home';
 import About from '../pages/About';
 import Leaders from '../pages/Leaders';
 import Events from '../pages/Events';
+import SGSignUp from '../pages/SGSignUp';
 
 const AppRoutes = () => {
   return (
@@ -18,6 +19,7 @@ const AppRoutes = () => {
           <Route path="/about" element={<About />} />
           <Route path="/leaders" element={<Leaders />} />
           <Route path="/events" element={<Events />} />
+          <Route path="/sgsignup" element={<SGSignUp />} />
         </Routes>
       </div>
       <Footer />
