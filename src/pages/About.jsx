@@ -1,5 +1,4 @@
-import React from 'react';
-import './About.css'; // <-- add this
+import './About.css';
 
 const About = () => {
   return (
@@ -16,7 +15,6 @@ const About = () => {
       </div>
 
       <div className="about-content">
-        {/* Who We Are */}
         <section className="about-section">
           <h2 className="about-section-title">Who We Are</h2>
           <p>
@@ -28,7 +26,6 @@ const About = () => {
           </p>
         </section>
 
-        {/* InterVarsity */}
         <section className="about-section">
           <h2 className="about-section-title">InterVarsity</h2>
           <p>
@@ -41,7 +38,6 @@ const About = () => {
           </p>
         </section>
 
-        {/* Christian Fellowship */}
         <section className="about-section">
           <h2 className="about-section-title">Christian Fellowship</h2>
           <p>
@@ -52,7 +48,6 @@ const About = () => {
           </p>
         </section>
 
-        {/* Everyone is Welcome! */}
         <section className="about-section">
           <h2 className="about-section-title">Everyone is Welcome!</h2>
           <p>

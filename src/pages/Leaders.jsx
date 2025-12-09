@@ -23,15 +23,13 @@ const Leaders = () => {
 
   return (
     <section className="leaders-page">
-      {/* Hero Section */}
       <div className="leaders-hero">
         <h1 className="leaders-title">Meet Our Leaders</h1>
         <p className="leaders-tagline">
-          The heart behind AAIV — our chapter shepherds, small group leaders, and apprentices.
+          The heart behind AAIV — our chapter shepherds, small group leaders, and small group apprentices.
         </p>
       </div>
 
-      {/* Card Container */}
       <div className="leaders-content">
         <Container>
           <Row className="gy-4">
