@@ -1,4 +1,3 @@
-import React from 'react';
 import PhotoCarousel from '../components/PhotoCarousel';
 import DailyVerse from '../components/DailyVerse';
 

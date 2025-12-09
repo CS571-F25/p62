@@ -1,34 +1,26 @@
 import Carousel from 'react-bootstrap/Carousel';
+import albumData from '../assets/SB2025.json'; 
 
-// 2025 Senior Banquet Google Photos: https://photos.google.com/share/AF1QipN4b_rvldO8PYqLiM3G2TZPi2Yst7O9CcStHnLX2CQfablAn4FFp5p38jZGD4megw?key=ZDVUMUdMT0lrQWY3b0lFTzEtYzBCSjFSMDNHRmR3
-
-const PhotoCarousel = () => {
+const GooglePhotosCarousel = () => {
+  const { photos, album_title } = albumData;
+  
   return (
-    <Carousel>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="https://via.placeholder.com/800x400"
-          alt="First slide"
-        />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="https://via.placeholder.com/800x400"
-          alt="Second slide"
-        />
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
+    <div>
+      <h2>{album_title}</h2>
+      <Carousel interval={2000}>
+        {photos.map((photo, index) => (
+          <Carousel.Item key={index}>
+            <img
+              className="d-block w-100"
+              src={photo.url}
+              alt={photo.caption}
+              style={{ maxHeight: '400px', objectFit: 'contain' }} 
+            />
+          </Carousel.Item>
+        ))}
+      </Carousel>
+    </div>
   );
 };
 
-export default PhotoCarousel;
+export default GooglePhotosCarousel;
