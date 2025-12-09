@@ -11,8 +11,8 @@ const AppRoutes = () => {
   return (
     <Router basename="/p62/">
       <NavigationBar />
-      {/* Remove padding so Home hero touches the navbar */}
-      <div style={{ padding: 0 }}>
+      {/* Add top padding so content starts below the fixed navbar */}
+      <div style={{ paddingTop: '62px' }}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

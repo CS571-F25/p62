@@ -1,10 +1,28 @@
+import { useEffect, useState } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './NavigationBar.css';
 
 const NavigationBar = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" className="aaiv-navbar">
+    <Navbar
+      bg="dark"
+      variant="dark"
+      expand="lg"
+      fixed="top"                               // <- freezes at top
+      className={`aaiv-navbar ${scrolled ? 'aaiv-navbar--scrolled' : ''}`}
+    >
       <Navbar.Brand as={Link} to="/" className="aaiv-brand ms-3">
         <img
           src="/p62/assets/logo.png"

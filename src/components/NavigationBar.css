@@ -1,8 +1,21 @@
 /* Slightly taller, more spacious navbar */
 .aaiv-navbar {
   padding: 0.75rem 1.25rem;
-  background: #111827 !important; /* Rich dark blue/black */
+  background: rgba(17, 24, 39, 0.98) !important; /* nearly solid at top */
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition:
+    background-color 0.2s ease,
+    backdrop-filter 0.2s ease,
+    box-shadow 0.2s ease;
+  z-index: 1030; /* stay above page content */
+}
+
+/* When scrolled down: a bit more transparent, subtle shadow */
+.aaiv-navbar.aaiv-navbar--scrolled {
+  background: rgba(17, 24, 39, 0.82) !important;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.35);
 }
 
 /* Logo + text aligned cleanly */
