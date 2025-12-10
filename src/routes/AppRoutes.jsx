@@ -7,6 +7,7 @@ import About from '../pages/About';
 import Leaders from '../pages/Leaders';
 import Events from '../pages/Events';
 import SGSignUp from '../pages/SGSignUp';
+import Worship from '../pages/Worship';
 
 const AppRoutes = () => {
   return (
@@ -20,6 +21,7 @@ const AppRoutes = () => {
           <Route path="/leaders" element={<Leaders />} />
           <Route path="/events" element={<Events />} />
           <Route path="/sgsignup" element={<SGSignUp />} />
+          <Route path="/worship" element={<Worship />} />
         </Routes>
       </div>
       <Footer />

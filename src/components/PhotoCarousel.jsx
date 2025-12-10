@@ -1,5 +1,5 @@
 import Carousel from 'react-bootstrap/Carousel';
-import albumData from '../assets/SB2025.json';
+import albumData from '/src/assets/SB2025.json';
 import './GooglePhotosCarousel.css';
 
 const GooglePhotosCarousel = () => {
@@ -10,13 +10,11 @@ const GooglePhotosCarousel = () => {
     if (p.width && p.height) return p.width >= p.height;
     if (p.aspectRatio) return p.aspectRatio >= 1;
     if (p.orientation) return p.orientation === 'landscape';
-    // fallback: keep photo if we don't know orientation
     return true;
   });
 
   return (
     <section className="hero-carousel hero-carousel--fullbleed">
-      {/* Fixed overlay text */}
       <div className="hero-overlay">
         <h1 className="hero-title">WELCOME TO AAIV</h1>
         <h2 className="hero-subtitle">SENIOR BANQUET 2025</h2>
@@ -24,7 +22,6 @@ const GooglePhotosCarousel = () => {
 
       <Carousel
         interval={2000}
-        // keep indicators rendered so we can show/hide via CSS
         prevLabel=""
         nextLabel=""
         className="hero-carousel-inner"
