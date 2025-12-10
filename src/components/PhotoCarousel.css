@@ -81,28 +81,6 @@ body,
   font-weight: 500;
 }
 
-/* --- Indicators (dots): only visible on hover --- */
-
-.hero-carousel .carousel-indicators {
-  bottom: 1.5rem;
-  opacity: 0;               /* hidden by default */
-  pointer-events: none;     /* don't accidentally click when hidden */
-  transition: opacity 0.2s ease;
-}
-
-/* When hovering anywhere over the carousel, show dots */
-.hero-carousel:hover .carousel-indicators {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-/* You can tweak the default dot size if you want */
-.hero-carousel .carousel-indicators [data-bs-target] {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-}
-
 /* --- Arrow controls: full-height white-transparent hover columns --- */
 
 /* Left/right control areas (use Bootstrap's default icons) */
