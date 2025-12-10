@@ -4,7 +4,6 @@ import './Events.css';
 const Events = () => {
   return (
     <section className="events-page">
-      {/* Hero */}
       <div className="events-hero">
         <h1 className="events-title">Events</h1>
         <p className="events-tagline">
@@ -14,9 +13,7 @@ const Events = () => {
 
       <Container>
         <Row className="justify-content-center">
-          {/* Make the column full width so .events-content can actually be wide */}
           <Col lg={12} xl={12}>
-            {/* Weekly Schedule */}
             <div className="events-content">
               <section className="events-section">
                 <h2 className="events-section-title">Weekly Schedule</h2>

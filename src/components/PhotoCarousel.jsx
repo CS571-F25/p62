@@ -24,10 +24,8 @@ const PhotoCarousel = () => {
 
   return (
     <section className="hero-carousel hero-carousel--fullbleed">
-      {/* Fixed overlay text */}
       <div className="hero-overlay">
         <h1 className="hero-title">WELCOME TO AAIV</h1>
-        {/* Use album_title from the chosen JSON */}
         <h2 className="hero-subtitle">
           {album_title}
         </h2>

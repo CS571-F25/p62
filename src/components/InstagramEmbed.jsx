@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 
 /**
  * Simple reusable Instagram embed component.
  *
  * Props:
- *  - id: Instagram post "shortcode" (e.g., 'DNf7mApNPs_')
+ *  - id: Instagram post id (e.g., 'DNf7mApNPs_')
  *  - className (optional): extra class for the wrapper div
  *  - label (optional): accessible label for screen readers
  */

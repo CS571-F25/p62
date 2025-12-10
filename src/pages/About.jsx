@@ -6,9 +6,7 @@ const About = () => {
     <section className="about-page">
       <Container>
         <Row className="justify-content-center">
-          {/* Full-width column so we can control width via CSS like Events */}
           <Col lg={12} xl={12}>
-            {/* Hero */}
             <div className="about-hero">
               <h1 className="about-title">About AAIV</h1>
               <p className="about-tagline">
@@ -20,7 +18,6 @@ const About = () => {
               </p>
             </div>
 
-            {/* Main content card */}
             <div className="about-content">
               <section className="about-section">
                 <h2 className="about-section-title">Who We Are</h2>

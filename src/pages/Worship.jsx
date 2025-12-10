@@ -37,7 +37,6 @@ const Worship = () => {
       <Container>
         <Row className="justify-content-center">
           <Col lg={12} xl={12}>
-            {/* Hero */}
             <div className="worship-hero">
               <h1 className="worship-title">Worship</h1>
               <p className="worship-tagline">2025 Large Group Worship Playlist</p>
@@ -47,9 +46,7 @@ const Worship = () => {
               </p>
             </div>
 
-            {/* Main content card */}
             <div className="worship-content">
-              {/* Song of the Day */}
               <section className="worship-section">
                 <h2 className="worship-section-title">Song of the Day</h2>
                 {todaysSong ? (
@@ -75,7 +72,6 @@ const Worship = () => {
                 )}
               </section>
 
-              {/* Full Playlist */}
               <section className="worship-section">
                 <h2 className="worship-section-title">Full Playlist</h2>
                 {songList.length > 0 ? (

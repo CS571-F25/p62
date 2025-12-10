@@ -20,7 +20,7 @@ const NavigationBar = () => {
       bg="dark"
       variant="dark"
       expand="lg"
-      fixed="top"                               // <- freezes at top
+      fixed="top"                               // freezes at top
       className={`aaiv-navbar ${scrolled ? 'aaiv-navbar--scrolled' : ''}`}
     >
       <Navbar.Brand as={Link} to="/" className="aaiv-brand ms-3">
