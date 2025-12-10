@@ -1,0 +1,107 @@
+.sg-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+  color: #1f2933;
+}
+
+/* Hero */
+.sg-hero {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sg-title {
+  font-size: clamp(2.25rem, 4vw, 3rem);
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.sg-tagline {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #4b5563;
+  margin-bottom: 0.75rem;
+}
+
+.sg-intro {
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 1.02rem;
+  line-height: 1.7;
+  color: #4b5563;
+}
+
+/* Main content card (matches About/Events/Worship cards) */
+.sg-content {
+  background: #ffffff;
+  border-radius: 1.25rem;
+  padding: 2.5rem 2.75rem;
+  margin-bottom: 30px;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Section inside the card */
+.sg-section {
+  margin-bottom: 0; /* only one section here, but kept for consistency */
+}
+
+/* Section header with accent bar (same pattern as Events/Worship) */
+.sg-section-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sg-section-title::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 22px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #f97316, #facc15);
+}
+
+/* Body text */
+.sg-text {
+  font-size: 1.02rem;
+  line-height: 1.8;
+  color: #4b5563;
+  margin-bottom: 1.25rem;
+}
+
+/* Iframe wrapper */
+.sg-iframe-wrapper {
+  margin-top: 0.75rem;
+}
+
+/* Make the iframe nicely fill the card width and look clean */
+.sg-iframe-wrapper iframe {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 0.75rem;
+  background: #ffffff;
+}
+
+/* Responsive tweaks */
+@media (max-width: 640px) {
+  .sg-page {
+    padding: 2.25rem 1.25rem 3rem;
+  }
+
+  .sg-content {
+    padding: 1.75rem 1.25rem;
+    max-width: 100%;
+  }
+}

@@ -62,7 +62,10 @@ const Worship = () => {
                       </span>
                     </p>
                     <div className="worship-embed-wrapper">
-                      <YoutubeEmbed embedId={todaysSong.embed_id} />
+                      <YoutubeEmbed
+                        embedId={todaysSong.embed_id}
+                        title={`Worship song of the day: ${todaysSong.title}`}
+                      />
                     </div>
                   </>
                 ) : (

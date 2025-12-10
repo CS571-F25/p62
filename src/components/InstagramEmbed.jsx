@@ -5,9 +5,10 @@ import React, { useEffect } from 'react';
  *
  * Props:
  *  - id: Instagram post "shortcode" (e.g., 'DNf7mApNPs_')
- *  - className (optional): extra class to wrap the blockquote, e.g., 'leaders-embed-wrapper'
+ *  - className (optional): extra class for the wrapper div
+ *  - label (optional): accessible label for screen readers
  */
-const InstagramEmbed = ({ id, className = '' }) => {
+const InstagramEmbed = ({ id, className = '', label }) => {
   useEffect(() => {
     // Check if the Instagram embed script is already on the page
     const existingScript = document.querySelector(
@@ -28,7 +29,10 @@ const InstagramEmbed = ({ id, className = '' }) => {
   const permalink = `https://www.instagram.com/p/${id}/?utm_source=ig_embed&utm_campaign=loading`;
 
   return (
-    <div className={className}>
+    <div
+      className={className}
+      aria-label={label || 'Embedded Instagram post'}
+    >
       <blockquote
         className="instagram-media"
         data-instgrm-captioned
