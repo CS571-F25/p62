@@ -108,18 +108,18 @@ body,
 /* Left/right control areas (use Bootstrap's default icons) */
 .hero-carousel .carousel-control-prev,
 .hero-carousel .carousel-control-next {
-  width: 8%;                 
-  align-items: center;        
-  justify-content: center;    
+  width: 8%;
+  align-items: center;
+  justify-content: center;
   background: transparent;
-  opacity: 0 !important;  /* force hidden by default */
+  /* opacity: 0 !important; */
   transition: opacity 0.2s ease, background 0.2s ease;
 }
 
 /* Kill Bootstrap's focus behavior so click doesn't keep them visible */
 .hero-carousel .carousel-control-prev:focus,
 .hero-carousel .carousel-control-next:focus {
-  opacity: 0 !important;
+  /* opacity: 0 !important; */
   background: transparent;
   box-shadow: none;
   outline: none;
