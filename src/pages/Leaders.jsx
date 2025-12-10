@@ -8,7 +8,7 @@ const Leaders = () => {
       <div className="leaders-hero">
         <h1 className="leaders-title">Meet Our Leaders</h1>
         <p className="leaders-tagline">
-          The heart behind AAIV — our chapter shepherds, small group leaders, and small group apprentices.
+          The heart behind AAIV — our Chapter Shepherds, Small Group Leaders, and Small Group Apprentices.
         </p>
       </div>
 

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Card, Spinner, Alert } from 'react-bootstrap';
 
 const DailyVerse = () => {
