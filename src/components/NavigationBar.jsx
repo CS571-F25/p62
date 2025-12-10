@@ -41,8 +41,8 @@ const NavigationBar = () => {
           <Nav.Link as={Link} to="/about" className="aaiv-link">About</Nav.Link>
           <Nav.Link as={Link} to="/leaders" className="aaiv-link">Leaders</Nav.Link>
           <Nav.Link as={Link} to="/events" className="aaiv-link">Events</Nav.Link>
-          <Nav.Link as={Link} to="/sgsignup" className="aaiv-link">SG Sign Up</Nav.Link>
           <Nav.Link as={Link} to="/worship" className="aaiv-link">Worship</Nav.Link>
+          <Nav.Link as={Link} to="/sgsignup" className="aaiv-link">Small Group Sign Up</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
