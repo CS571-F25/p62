@@ -1,0 +1,147 @@
+.worship-page {
+  max-width: 1200px; /* same width as About / Events */
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+  color: #1f2933;
+}
+
+/* Hero */
+.worship-hero {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.worship-title {
+  font-size: clamp(2.25rem, 4vw, 3rem);
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.worship-tagline {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #4b5563;
+  margin-bottom: 0.75rem;
+}
+
+.worship-intro {
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 1.02rem;
+  line-height: 1.7;
+  color: #4b5563;
+}
+
+/* Main content card (mirrors About/Events content) */
+.worship-content {
+  background: #ffffff;
+  border-radius: 1.25rem;
+  padding: 2.5rem 2.75rem;
+  margin-bottom: 30px;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Sections inside content card */
+.worship-section {
+  margin-bottom: 2.25rem;
+}
+
+.worship-section:last-child {
+  margin-bottom: 0;
+}
+
+/* Section header with accent bar (same as About/Events) */
+.worship-section-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.worship-section-title::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 22px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #f97316, #facc15);
+}
+
+/* Text styling */
+.worship-text {
+  font-size: 1.02rem;
+  line-height: 1.8;
+  color: #4b5563;
+  margin-bottom: 1.25rem;
+}
+
+.worship-song-title {
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Embed wrapper: keeps YouTube centered and responsive-friendly */
+.worship-embed-wrapper {
+  margin-top: 0.75rem;
+}
+
+/* If your YoutubeEmbed renders an iframe, this helps responsiveness */
+.worship-embed-wrapper iframe {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 0.75rem;
+  border: none;
+}
+
+/* Playlist list */
+.worship-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.worship-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid rgba(229, 231, 235, 0.85);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.worship-list-item:last-child {
+  border-bottom: none;
+}
+
+/* Badge for today's song */
+.worship-badge-today {
+  background: linear-gradient(135deg, #facc15, #f97316);
+  color: #111827;
+  font-size: 0.78rem;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 0.15rem 0.65rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 640px) {
+  .worship-page {
+    padding: 2.25rem 1.25rem 3rem;
+  }
+
+  .worship-content {
+    padding: 1.75rem 1.25rem;
+    max-width: 100%;
+  }
+}

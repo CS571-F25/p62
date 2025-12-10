@@ -1,9 +1,18 @@
+import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import albumData from '/src/assets/SB2025.json';
-import './GooglePhotosCarousel.css';
+import sbAlbum from '../assets/SB2025.json';
+import tbAlbum from '../assets/TB2025.json';
+import './PhotoCarousel.css';
 
-const GooglePhotosCarousel = () => {
-  const { photos } = albumData;
+const PhotoCarousel = () => {
+  // Randomly pick one album ONCE per mount
+  const [albumData] = useState(() => {
+    const albums = [sbAlbum, tbAlbum];
+    const randomIndex = Math.floor(Math.random() * albums.length);
+    return albums[randomIndex];
+  });
+
+  const { photos, album_title } = albumData;
 
   // Prefer landscape photos if metadata is available
   const landscapePhotos = photos.filter((p) => {
@@ -15,9 +24,13 @@ const GooglePhotosCarousel = () => {
 
   return (
     <section className="hero-carousel hero-carousel--fullbleed">
+      {/* Fixed overlay text */}
       <div className="hero-overlay">
         <h1 className="hero-title">WELCOME TO AAIV</h1>
-        <h2 className="hero-subtitle">SENIOR BANQUET 2025</h2>
+        {/* Use album_title from the chosen JSON */}
+        <h2 className="hero-subtitle">
+          {album_title}
+        </h2>
       </div>
 
       <Carousel
@@ -40,4 +53,4 @@ const GooglePhotosCarousel = () => {
   );
 };
 
-export default GooglePhotosCarousel;
+export default PhotoCarousel;
