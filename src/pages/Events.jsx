@@ -85,6 +85,7 @@ const Events = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="events-instagram-link"
+                        style={{ color: '#083f91ff' }}
                     >
                         @aaivuwmadison
                     </a>.

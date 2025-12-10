@@ -30,14 +30,14 @@ const Footer = () => {
     color: '#111'
   };
 
-  const linkStyle = { color: '#0d6efd', textDecoration: 'none' };
+  const linkStyle = { color: '#083f91ff', textDecoration: 'none' };
 
   return (
     <footer style={containerStyle}>
       <Container>
         <Row className="justify-content-center text-center mb-3">
           <Col md={8} lg={6}>
-            <h4 style={{ margin: 0 }}>AAIV</h4>
+            <h1 style={{ margin: 0 }}>AAIV</h1>
             <p style={{ margin: '0.25rem 0 0.5rem', color: '#555' }}>
               Follow &amp; connect with us!
             </p>
