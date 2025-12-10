@@ -25,16 +25,17 @@ const PhotoCarousel = () => {
   return (
     <section className="hero-carousel hero-carousel--fullbleed">
       <div className="hero-overlay">
-        <h1 className="hero-title">WELCOME TO AAIV</h1>
-        <h2 className="hero-subtitle">
-          {album_title}
-        </h2>
+        {/* 👇 new inner box for stronger contrast */}
+        <div className="hero-overlay-box">
+          <h1 className="hero-title">WELCOME TO AAIV</h1>
+          <h2 className="hero-subtitle">{album_title}</h2>
+        </div>
       </div>
 
       <Carousel
         interval={2000}
-        prevLabel=""
-        nextLabel=""
+        prevLabel="Previous photo"
+        nextLabel="Next photo"
         className="hero-carousel-inner"
       >
         {landscapePhotos.map((photo, index) => (

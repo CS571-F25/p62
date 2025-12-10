@@ -143,3 +143,33 @@ body,
     transparent
   );
 }
+
+/* Dark pill behind the titles for stronger contrast */
+.hero-overlay-box {
+  background: rgba(0, 0, 0, 0.55);
+  padding: 1rem 2.5rem;
+  border-radius: 999px; /* long pill look */
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+/* Make text-shadow slightly stronger to stand out on bright photos */
+.hero-title,
+.hero-subtitle {
+  text-shadow: 0 3px 12px rgba(0, 0, 0, 0.85);
+}
+
+/* (Optional but nice) slightly stronger overall gradient */
+.hero-carousel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.18),  /* was 0.08 */
+    rgba(0, 0, 0, 0.35)   /* was 0.25 */
+  );
+  z-index: 1;
+}
